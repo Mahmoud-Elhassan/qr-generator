@@ -12,7 +12,7 @@ function App() {
         style={{
           height: "auto",
           maxWidth: "100%",
-          width: "100%",
+          width: "400",
           margin: "15px 0",
         }}
         value={value}
@@ -23,6 +23,7 @@ function App() {
         placeholder="Text or Url"
         onChange={(e) => setValue(e.target.value)}
       />
+      <button onClick={() => window.print()}>Download</button>
     </main>
   );
 }
